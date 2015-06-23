@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans default-autowire="byName" default-lazy-init="true" default-dependency-check="none" default-merge="false">
+  <bean id="tsysmenuManager" class="com.ucard.service.system.TsysmenuManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="loginManager" class="com.ucard.service.base.LoginManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tsysdatadictManager" class="com.ucard.service.system.TsysdatadictManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tsysroleManager" class="com.ucard.service.system.TsysroleManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="aboutManager" class="com.ucard.service.system.AboutManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="selectManager" class="com.ucard.service.base.SelectManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tbsuserManager" class="com.ucard.service.base.TbsuserManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="treguserManager" class="com.ucard.service.regedit.TreguserManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tbsmaillogManager" class="com.ucard.service.base.TbsmaillogManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tfeedbackManager" class="com.ucard.service.base.TfeedbackManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tsyscmpparamManager" class="com.ucard.service.system.TsyscmpparamManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tsysexcelManager" class="com.ucard.service.system.TsysexcelManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="trppluginManager" class="com.ucard.service.report.TrppluginManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="trphtmlcateManager" class="com.ucard.service.report.TrphtmlcateManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="trpreportManager" class="com.ucard.service.report.TrpreportManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="reporttoolManager" class="com.ucard.service.report.ReportToolManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="trpreportdatasourceManager" class="com.ucard.service.report.TrpreportdatasourceManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="trpreportpluginManager" class="com.ucard.service.report.TrpreportpluginManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="trpreportconditionManager" class="com.ucard.service.report.TrpreportconditionManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tsysbillnoruleManager" class="com.ucard.service.system.TsysbillnoruleManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="chartManager" class="com.ucard.service.base.ChartManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tladadminManager" class="com.ucard.service.loginad.TladadminManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tcompetionManager" class="com.ucard.service.competion.TcompetionManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tdivisioncompetManager" class="com.ucard.service.competion.TdivisioncompetManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="ttrycompetManager" class="com.ucard.service.competion.TtrycompetManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tmaincompetManager" class="com.ucard.service.competion.TmaincompetManager" lazy-init="default" autowire="default" dependency-check="default"/>
+ <bean id="tsysjobManager" class="com.ucard.service.system.TsysjobManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tsysjobplanManager" class="com.ucard.service.system.TsysjobplanManager" lazy-init="default" autowire="default" dependency-check="default"/>
+</beans>

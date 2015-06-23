@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans default-autowire="byName" default-lazy-init="true" default-dependency-check="none" default-merge="false">
+  <bean id="tsysmenuManager" class="com.wxservice.service.system.TsysmenuManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="loginManager" class="com.wxservice.service.base.LoginManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tsysdatadictManager" class="com.wxservice.service.system.TsysdatadictManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tsysroleManager" class="com.wxservice.service.system.TsysroleManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="aboutManager" class="com.wxservice.service.system.AboutManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="selectManager" class="com.wxservice.service.base.SelectManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tbsuserManager" class="com.wxservice.service.base.TbsuserManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="treguserManager" class="com.wxservice.service.regedit.TreguserManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tbsmaillogManager" class="com.wxservice.service.base.TbsmaillogManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tfeedbackManager" class="com.wxservice.service.base.TfeedbackManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tsyscmpparamManager" class="com.wxservice.service.system.TsyscmpparamManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tsysexcelManager" class="com.wxservice.service.system.TsysexcelManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="trppluginManager" class="com.wxservice.service.report.TrppluginManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="trphtmlcateManager" class="com.wxservice.service.report.TrphtmlcateManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="trpreportManager" class="com.wxservice.service.report.TrpreportManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="reporttoolManager" class="com.wxservice.service.report.ReportToolManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="trpreportdatasourceManager" class="com.wxservice.service.report.TrpreportdatasourceManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="trpreportpluginManager" class="com.wxservice.service.report.TrpreportpluginManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="trpreportconditionManager" class="com.wxservice.service.report.TrpreportconditionManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tsysbillnoruleManager" class="com.wxservice.service.system.TsysbillnoruleManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="chartManager" class="com.wxservice.service.base.ChartManager" lazy-init="default" autowire="default" dependency-check="default"/>
+ <bean id="tsysjobManager" class="com.wxservice.service.system.TsysjobManager" lazy-init="default" autowire="default" dependency-check="default"/>
+  <bean id="tsysjobplanManager" class="com.wxservice.service.system.TsysjobplanManager" lazy-init="default" autowire="default" dependency-check="default"/>
+</beans>

@@ -1,0 +1,29 @@
+<ehcache>
+    <diskStore path="java.io.tmpdir"/>
+    <!--  启用缓存时
+     <defaultCache
+        maxElementsInMemory="50000"
+        eternal="false"
+        timeToIdleSeconds="600000"
+        timeToLiveSeconds="86400000"
+        overflowToDisk="false"
+        />
+     -->
+     <!--  关闭缓存时启用
+    <defaultCache 
+        maxElementsInMemory="0"
+        eternal="false"
+        timeToIdleSeconds="120"
+        timeToLiveSeconds="120"
+        overflowToDisk="false"
+        />
+     -->   
+     
+     <defaultCache
+        maxElementsInMemory="50000"
+        eternal="false"
+        timeToIdleSeconds="600000"
+        timeToLiveSeconds="86400000"
+        overflowToDisk="false"
+        />
+ </ehcache>
