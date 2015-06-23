@@ -1,0 +1,17 @@
+/*--- µÇÂ¼ --- */
+#login-dlg {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+}
+
+#login-dlg .x-dlg-hd div {
+    background-image: url(images/vm16.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 20px;
+    height: 16px;
+    font:normal 9pt tahoma, arial
+}
+
+/* END */

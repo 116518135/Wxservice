@@ -1,0 +1,114 @@
+.x-layout-panel {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+#north {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 2px; BORDER-TOP: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: 0px; COLOR: #15428b; PADDING-TOP: 2px; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: #c3daf9
+}
+#north H1 {
+	FONT-SIZE: 150%; MARGIN: 3px 5px; COLOR: #15428b
+}
+#north #welcome {
+	FONT-SIZE: 80%; RIGHT: 2px; POSITION: absolute; TOP: 2px
+}
+#north UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; RIGHT: 2px; PADDING-BOTTOM: 0px; MARGIN: 0px; BOTTOM: 2px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; POSITION: absolute
+}
+#north UL LI {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; FONT-SIZE: 80%; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 5px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#north #welcome {
+	FONT-SIZE: 100%
+}
+#north UL LI A {
+	FONT-SIZE: 100%
+}
+#south {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 2px; BORDER-TOP: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: 0px; COLOR: #15428b; PADDING-TOP: 2px; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: #c3daf9
+}
+BODY.framed {
+	MARGIN: 10px
+}
+#x-accordion-panel {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.x-accordion-icon UL {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: left top; PADDING-LEFT: 54px; MIN-HEIGHT: 54px; BACKGROUND-IMAGE: url(/images/containers/ext/icons/48x48/default.png); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat
+}
+.contacts UL {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/48x48/contacts.png)
+}
+.events UL {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/48x48/events.png)
+}
+.login UL {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/48x48/login.png)
+}
+.logout UL {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/48x48/logout.png)
+}
+.home UL {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/48x48/home.png)
+}
+.notes UL {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/48x48/notes.png)
+}
+.tasks UL {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/48x48/tasks.png)
+}
+.projects UL {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/48x48/projects.png)
+}
+.tenants UL {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/48x48/tenants.png)
+}
+.vendors UL {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/48x48/vendors.png)
+}
+.floorplanner UL {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/48x48/floorplanner.png)
+}
+.x-tabs-strip .x-layout-tab-icon {
+	BACKGROUND-POSITION: 10px 3px; PADDING-LEFT: 34px; BACKGROUND-IMAGE: url(/images/containers/ext/icons/16x16/default.png); BACKGROUND-REPEAT: no-repeat
+}
+.x-tabs-strip .contacts {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/16x16/contacts.png)
+}
+.x-tabs-strip .vendors {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/16x16/vendors.png)
+}
+.x-tabs-strip .tenants {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/16x16/tenants.png)
+}
+.x-tabs-strip .events {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/16x16/events.png)
+}
+.x-tabs-strip .tasks {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/16x16/tasks.png)
+}
+.x-tabs-strip .projects {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/16x16/projects.png)
+}
+.x-tabs-strip .home {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/16x16/home.png)
+}
+.x-tabs-strip .notes {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/16x16/notes.png)
+}
+.x-tabs-strip .floorplanner {
+	BACKGROUND-IMAGE: url(/images/containers/ext/icons/16x16/floorplanner.png)
+}
+UL.navigation {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; LIST-STYLE-IMAGE: none; PADDING-BOTTOM: 5px; MARGIN: 0px 0px 5px; WIDTH: 100%; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+UL.navigation LI {
+	BORDER-RIGHT: #666666 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #666666 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 10px 0px 0px; BORDER-LEFT: #666666 0px; PADDING-TOP: 0px; BORDER-BOTTOM: #666666 0px
+}
+UL.navigation LI.last {
+	BORDER-RIGHT: 0px
+}
+UL.navigation:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+TABLE.data {
+	MARGIN: 0px 0px 20px
+}

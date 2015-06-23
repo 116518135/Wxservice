@@ -1,0 +1,316 @@
+/* --------------- 一般样式 -------------- */
+
+/* 页面文字 */
+.common-text {COLOR: #000000; FONT-FAMILY: 'Arial', 'Helvetica'; FONT-SIZE: 13px; FONT-WEIGHT: normal; TEXT-DECORATION: none}
+.common-text-bold {COLOR: #000000; FONT-FAMILY: 'Arial', 'Helvetica'; FONT-SIZE: 13px; FONT-WEIGHT: bold; TEXT-DECORATION: none}
+
+/* END */
+/* --------------- 修改 Ext CSS -------------- */
+.x-btn button{
+	font:normal 12px tahoma, verdana, helvetica;
+}
+.x-btn-text {
+	font:normal 13px tahoma, verdana, helvetica;
+}
+.x-layout-panel-hd-text{
+    FONT-FAMILY: '宋体'; FONT-SIZE: 15px; FONT-WEIGHT: bold;
+}
+.x-tabs-strip .x-tabs-text {
+	font:normal 13px tahoma,arial,helvetica;
+	color:#666;
+	overflow:hidden;
+	white-space: nowrap;
+	cursor:pointer;
+	text-overflow: ellipsis;
+}
+.x-grid-cell-text {
+   font-size:14px;
+}
+.x-grid-hd-text {
+   font-size:13px;
+}  
+.x-menu-item {
+	font:normal 13px tahoma,arial,helvetica;
+}
+.x-toolbar td, .x-toolbar span, .x-toolbar input, .x-toolbar div, .x-toolbar select, .x-toolbar label{
+    font:normal 13px tahoma, arial, helvetica, sans-serif;
+}
+.x-small-editor .x-form-field {
+    font:normal 13px arial, tahoma, helvetica, sans-serif;
+}
+.ext-safari .x-small-editor .x-form-field {
+    font:normal 13px arial, tahoma, helvetica, sans-serif;
+}
+.x-grid-row-alt{
+	background-color:#ebf3fd;
+}
+.x-menu-sep {
+	background:#c3daf9;
+    font-size: 2px;
+}
+#divo-loading-msg {
+    position: absolute;
+    top: 0;
+    right: 0;
+	z-index: 20001 !important;
+    COLOR: #ffffff; 
+	background-color:red;
+	FONT-FAMILY: 'Arial', 'Helvetica'; 
+	FONT-SIZE: 13px; 
+}
+li.x-tree-node { 
+  float: left; clear: left; 
+}
+
+/* END */
+/* --------------- Divo.grid 类中的视图新建或修改表单用 -------------- */
+#grid-view{
+	background-image: url('../images/bg.jpg');
+	border:2px solid #c3daf9;
+	position:absolute;
+	z-index:10006;
+	font-size:8pt;
+	width:300px;
+	padding:5px;
+	overflow:auto;
+	left:-1000px;
+	top:-1000px;
+}
+#grid-view input{
+	font:normal 8pt arial,helvetica;
+}
+#grid-view .eg{
+	display:block;
+	padding:3px;
+	color:#1e4e8f;
+}
+#grid-view-name {
+	width:240px;
+}
+#grid-view-close {
+	position:absolute;
+	right:2px;
+	top:2px;
+	cursor:pointer;
+}
+#grid-view p{
+	height:18px;
+	display:none;
+}
+#grid-view p.active-msg{
+	display:block;
+}
+
+/* END */
+/* --------------- 弹出对话框或表单专用样式 --------------- */
+form {
+    padding: 10px;
+}
+
+label {
+    COLOR: #000000; 
+    FONT-FAMILY: 'Arial', 'Helvetica'; 
+    FONT-SIZE: 13px; 
+    FONT-WEIGHT: normal; 
+    TEXT-DECORATION: none
+}
+
+form div label.labelCheckbox input.inputCheckbox, form div label.labelRadio input.inputRadio, label.labelCheckbox input.inputCheckbox, label.labelRadio input.inputRadio {
+	margin:0pt;
+}
+
+form div.required, form div.optional {
+    clear:left;
+    display:block;
+    margin:0pt 0pt 1px;
+    padding:1px 3px;
+    width:353px;
+}
+
+form div.required label, form div.optional label {
+    display:block;
+    float:left;
+    margin:0pt 0pt 5px;
+    padding:3px 5px;
+    text-align:right;
+    width:130px;
+}
+
+form div.optional label, label.optional {
+    font-weight:normal;
+}
+
+form div.required label, label.required {
+    font-weight:bold;
+}
+
+form div label.labelCheckbox, form div label.labelRadio {
+    display:block;
+    float:none;
+    margin:0pt 0pt 5px 142px;
+    padding:0pt;
+    text-align:left;
+    width:200px;
+}
+
+form div input, form div select, form div textarea, form div p {
+    margin:0pt;
+    padding:1px 3px;
+    width:200px;
+}
+
+form div input.inputCheckbox, form div input.inputRadio, input.inputCheckbox, input.inputRadio {
+    background-color:transparent;
+    border-width:0pt;
+    display:inline;
+    height:14px;
+    margin:0pt 0pt 0pt 140px;
+    padding:0pt;
+    width:14px;
+}
+
+form div.error, form div.left div.error, form div.right div.error {
+    border:1px solid #FF0000;
+    color:#666666;
+}
+
+form div.error p.error, form div.left div.error p.error, form div.right div.error p.error {
+    border-style:none;
+    color:#FF0000;
+    font-size:88%;
+    font-weight:bold;
+    margin:0pt 0pt 0pt 118px;
+    width:200px;
+}
+
+form input, form select, form textarea, form iframe {
+    background-color:#FFFFFF;
+}
+
+div.optional label:before {
+    content:'';
+}
+
+div.required label:before {
+    content:'';
+}
+
+form div label.labelCheckbox, form div label.labelRadio, label.labelCheckbox, label.labelRadio {
+    display:block;
+    line-height:120%;
+    padding:4px 0pt 0pt 18px;
+    text-indent:-18px;
+    width:190px;
+}
+
+/* END */
+/* --------------- 应用于对话框或表单提示信息区 -------------- */
+.x-dlg-ft {
+    position: relative;
+}
+  
+#dlg-msg {
+  	position:  absolute;
+  	left: 0;
+  	top: 0;
+  	width: 75%;
+}
+#dlg-msg2 {
+  	position:  absolute;
+  	left: 0;
+  	top: 0;
+  	width: 75%;
+}
+#dlg-msg3 {
+  	position:  absolute;
+  	left: 0;
+  	top: 0;
+  	width: 75%;
+}
+
+.posting-msg {
+  	display: none;
+  	font:  normal 8pt tahoma, arial;
+  	color: black;
+}
+
+.active-msg {
+  	display: block;
+}
+  
+#post-error {
+    background: url(../images/icon_error.gif) no-repeat left;
+    padding: 5px 0 5px 25px;
+}
+#post-error2 {
+    background: url(../images/icon_error.gif) no-repeat left;
+    padding: 5px 0 5px 25px;
+}
+#post-error3 {
+    background: url(../images/icon_error.gif) no-repeat left;
+    padding: 5px 0 5px 25px;
+}
+  
+#post-error-msg{
+  	color: red;
+}
+#post-error-msg2{
+  	color: red;
+}
+#post-error-msg3{
+  	color: red;
+}
+   
+#post-success {
+    background: url(../images/icon_info.gif) no-repeat left;
+    padding: 1px 0 1px 25px;
+    margin-top: 1px;
+}
+#post-success2{
+    background: url(../images/icon_info.gif) no-repeat left;
+    padding: 1px 0 1px 25px;
+    margin-top: 1px;
+}
+#post-success3{
+    background: url(../images/icon_info.gif) no-repeat left;
+    padding: 1px 0 1px 25px;
+    margin-top: 1px;
+}
+
+#post-success-msg{
+  	color: black;
+}
+#post-success-msg2{
+  	color: black;
+}
+#post-success-msg3{
+  	color: black;
+}
+
+#post-wait{
+    background: url(../images/loading.gif) no-repeat left;
+    padding: 1px 0 1px 25px;
+    margin-top: 1px;
+}
+#post-wait2{
+    background: url(../images/loading.gif) no-repeat left;
+    padding: 1px 0 1px 25px;
+    margin-top: 1px;
+}
+#post-wait3{
+    background: url(../images/loading.gif) no-repeat left;
+    padding: 1px 0 1px 25px;
+    margin-top: 1px;
+}
+  
+#post-wait-msg{
+    color: black;
+}
+#post-wait-msg2{
+    color: black;
+}
+#post-wait-msg3{
+    color: black;
+}
+
+/* END */

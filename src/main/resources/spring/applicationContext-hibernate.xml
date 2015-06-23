@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+	   xmlns:tx="http://www.springframework.org/schema/tx"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+	   default-autowire="byName" default-lazy-init="true">
+
+	<!-- 属性文件读入 -->
+	<bean id="propertyConfigurer" class="com.wxservice.framework.start.PropertyConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath*:config/my.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<tx:annotation-driven/>
+
+
+	<aop:aspectj-autoproxy/>
+
+
+	<aop:config proxy-target-class="true">
+		<aop:advisor pointcut="execution(* com.wxservice.framework.dao.impl.DaoImpl.*(..))" advice-ref="txAdvice"/>
+	</aop:config>
+
+
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="get*"     read-only="true"/>
+			<tx:method name="evict*"   read-only="true"/>
+			<tx:method name="load*"    read-only="true"/>
+			<tx:method name="list*"    read-only="true"/>
+			<tx:method name="iterate*" read-only="true"/>
+			<tx:method name="is*"      read-only="true"/>
+			<tx:method name="*"/>
+		</tx:attributes>
+	</tx:advice>
+
+</beans>

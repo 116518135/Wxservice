@@ -1,0 +1,101 @@
+#set($className=$propertyUtil.getPoClassName($table))
+#set($pk=$table.getPk().getRef())
+
+package ${poPackage};
+import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.TableGenerator;
+
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
+import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.annotations.Proxy;
+
+/**
+ * 
+ * 描述：   Hibernate PO
+ * 创建人：Gererator
+ */
+@Entity
+@Table(name = "$className")
+@Proxy(lazy=false)
+@Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
+
+public class $className implements  Serializable
+
+{
+  private static final long serialVersionUID = -1L;	
+  /**
+   *主键 $pk.name
+  */
+  protected $propertyUtil.getDataJavaType($pk)  $propertyUtil.getPropertyName($pk.code);// //字段名称： $pk.name
+
+#foreach($column in $table.columns)
+  protected $propertyUtil.getDataJavaType($column)  $propertyUtil.getPropertyName($column.code);  //字段名称： $column.name
+#end
+	@Id
+	@GeneratedValue(strategy = GenerationType.TABLE, generator = "$className")
+	@TableGenerator(
+	   name = "$className",
+	   table = "tsyscounter",
+	   pkColumnName = "tablekey",
+	   valueColumnName = "countvalue",
+	   pkColumnValue = "$className",
+	   allocationSize = 1
+	)
+  public $propertyUtil.getDataJavaType($pk) $propertyUtil.getGetterMethod($pk.code) () {
+     return $propertyUtil.getPropertyName($pk.code);
+  }
+  public void $propertyUtil.getSetterMethod($pk.code)($propertyUtil.getDataJavaType($pk) $propertyUtil.getPropertyName($pk.code)) {
+     this.$propertyUtil.getPropertyName($pk.code) = $propertyUtil.getPropertyName($pk.code);
+  }
+#foreach($column in $table.columns)
+ /**
+  * @return 返回 ${column.code},${column.name}
+  */
+  $column.hibernateColumn
+  public $propertyUtil.getDataJavaType($column) $propertyUtil.getGetterMethod($column.code) () {
+     return $propertyUtil.getPropertyName($column.code);
+  }
+	
+ /**
+  * @param $propertyUtil.getPropertyName($column.code) 
+  */
+  public void $propertyUtil.getSetterMethod($column.code)($propertyUtil.getDataJavaType($column) $propertyUtil.getPropertyName($column.code)) {
+     this.$propertyUtil.getPropertyName($column.code) = $propertyUtil.getPropertyName($column.code);
+  }
+#end
+
+  public String toString() {
+     return new ToStringBuilder(this, ToStringStyle.MULTI_LINE_STYLE)
+ 			   .append("$propertyUtil.getPropertyName($pk.code)", this.$propertyUtil.getPropertyName($pk.code))
+		       .toString();
+  }
+
+  public boolean equals(Object other) {
+     if ( !(other instanceof $className) ) return false;
+     $className castOther = ($className) other;
+     return new EqualsBuilder()
+       .append(this.$propertyUtil.getGetterMethod($pk.code)(), castOther.$propertyUtil.getGetterMethod($pk.code)())
+       .isEquals();
+  }
+
+
+  public int hashCode() {
+        return new HashCodeBuilder()
+            .append(this.$propertyUtil.getGetterMethod($pk.code)())
+            .toHashCode();
+  }
+ 
+
+}
+
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans default-autowire="byName" default-lazy-init="true" default-dependency-check="none" default-merge="false">
+  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" lazy-init="default" autowire="default" dependency-check="default">
+    <property name="driverClassName" value="${wxservice.database.driverClassName}"/>
+    <property name="url" value="jdbc:mysql://${wxservice.database.url}/${wxservice.database.name}?useUnicode=true&amp;characterEncoding=UTF-8"/>
+    <property name="username" value="${wxservice.database.user}"/>
+    <property name="password" value="${wxservice.database.password}"/>
+    <property name="maxActive" value="${wxservice.database.maxActive}"/>
+    <property name="maxIdle" value="${wxservice.database.maxIdle}"/>
+  </bean>
+  <!--Hibernate SessionFatory -->
+  <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean" lazy-init="false" autowire="default" dependency-check="default">
+    <property name="dataSource" ref="dataSource"/>
+    <property name="annotatedClasses">
+      <list merge="default">
+        <value>com.wxservice.database.po.system.Tsyslog</value>
+        <value>com.wxservice.database.po.system.Tsyscounter</value>
+        <value>com.wxservice.database.po.system.Tsysmenu</value>
+        <value>com.wxservice.database.po.system.Tsysrole</value>
+        <value>com.wxservice.database.po.system.Tsysroledtl</value>
+        <value>com.wxservice.database.po.system.Tsysjob</value>
+        <value>com.wxservice.database.po.system.Tsysjobplan</value>
+        <value>com.wxservice.database.po.regedit.Treguser</value>
+        <value>com.wxservice.database.po.regedit.Tfeedback</value>
+        <value>com.wxservice.database.po.base.Tbsuser</value>
+        <value>com.wxservice.database.po.system.Tsysdatadict</value>
+        <value>com.wxservice.database.po.system.Tsysdatadictdtl</value>
+        <value>com.wxservice.database.po.base.Tbsmaillog</value>
+        <value>com.wxservice.database.po.system.Tsyscmpparam</value>
+        <value>com.wxservice.framework.components.rop.Tsysloginlog</value>
+        <value>com.wxservice.database.po.system.Tsysexcel</value>
+        <value>com.wxservice.database.po.system.Tsysexceldtl</value>
+        <value>com.wxservice.database.po.system.Tsysbillnorule</value>
+        <value>com.wxservice.database.po.system.Tsysimg</value>
+        <value>com.wxservice.database.po.report.Trpplugin</value>
+        <value>com.wxservice.database.po.report.Trphtmlcate</value>
+        <value>com.wxservice.database.po.report.Trphtmlctrl</value>
+        <value>com.wxservice.database.po.report.Trpreport</value>
+        <value>com.wxservice.database.po.report.Trpreportdtl</value>
+        <value>com.wxservice.database.po.report.Trpreportdatasource</value>
+        <value>com.wxservice.database.po.report.Trpreportplugin</value>
+        <value>com.wxservice.database.po.report.Trpreportcondition</value>
+        <value>com.wxservice.database.po.report.Trpdcubetpl</value>
+      </list>
+    </property>
+    <property name="hibernateProperties">
+      <props merge="default">
+        <prop key="connection.useUnicode">true</prop>
+        <prop key="connection.characterEncoding">UTF-8</prop>
+        <prop key="hibernate.query.substitutions">true 1, false 0</prop>
+        <prop key="hibernate.dialect">${wxservice.hibernate.dialect}</prop>
+        <prop key="hibernate.show_sql">false</prop>
+        <prop key="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</prop>
+        <prop key="hibernate.cache.use_query_cache">true</prop>
+        <prop key="hibernate.jdbc.fetch_size">50</prop>
+        <prop key="hibernate.jdbc.batch_size">25</prop>
+      </props>
+    </property>
+  </bean>
+  <!--Hibernate TransactionManager -->
+  <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager" lazy-init="default" autowire="default" dependency-check="default">
+    <property name="sessionFactory" ref="sessionFactory"/>
+  </bean>
+  <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate" lazy-init="default" autowire="default" dependency-check="default"/>
+</beans>

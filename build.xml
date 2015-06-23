@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ucard" basedir="." default="all">
+	<property name="project.name.text" value="UCARD" />
+	<property name="target.dir" value="src/main/webapp/WEB-INF/classes" />
+	<property name="lib.dir" value="src/main/webapp/WEB-INF/lib" />
+	<property name="doc.dir" value="doc" />
+	<property name="war.dir" value="src/main/webapp" />
+	<property name="src.dir" value="src/main/java" />
+	<property name="resources.dir" value="src/main/resources" />
+	<target name="all" depends="display,clean,compile,copy,native2ascii">
+	</target>
+	<target name="display">
+		<echo message="=============${project.name.text}=============" />
+		<echo message="source directory = ${src.dir}" />
+		<echo message="target directory = ${target.dir}" />
+		<echo message="[ant display]        - show message of function" />
+		<echo message="[ant compile]        - compile file of java" />
+		<echo message="[ant copy]           - copy file of xml or properties" />
+		<echo message="[ant clean]          - delete directory of ${target.dir} " />
+		<echo message="[ant all  ]          - include target:clean,compile,copy" />
+		<echo message="[ant doc]            - create system api" />
+		<echo message="[ant war]            - build the web application archive" />
+		<echo message="" />
+	</target>
+	<path id="project.class.path">
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	<patternset id="source.files">
+		<include name="**/*.hbm.xml" />
+		<include name="**/*.xml" />
+		<include name="**/*.properties" />
+		<include name="**/*.vm" />
+		<include name="**/*.xsd" />
+		<include name="**/*.schemas" />
+
+	</patternset>
+	<target name="compile" depends="display,copy">
+		<mkdir dir="${target.dir}" />
+		<echo message="===========Compile Source Code===========" />
+		<javac destdir="${target.dir}" encoding="UTF-8">
+			<src path="${src.dir}" />
+			<classpath>
+				<path refid="project.class.path" />
+			</classpath>
+		</javac>
+	</target>
+	<target name="copy" depends="display">
+		<copy todir="${target.dir}">
+			<fileset dir="${src.dir}">
+				<patternset refid="source.files" />
+			</fileset>
+			<fileset dir="${resources.dir}">
+				<patternset refid="source.files" />
+			</fileset>
+		</copy>
+	</target>
+	<target name="clean" depends="display">
+		<delete dir="${target.dir}" />
+	</target>
+	<target name="jar">
+		<jar jarfile="ucard.jar" basedir="${target.dir}">
+			<include name="**/*.class" />
+			<include name="**/*.properties" />
+			<include name="**/*.vm" />
+			<include name="**/*.xml" />
+		</jar>
+	</target>
+	<target name="war" depends="compile" description="Build the web application archive">
+		<war warfile="ucard.war" basedir="${war.dir}" webxml="${war.dir}/WEB-INF/web.xml">
+			<exclude name="**/.*" />
+		</war>
+	</target>
+	<target name="doc" depends="compile">
+		<javadoc packagenames="*" classpathref="project.class.path" destdir="${doc.dir}" Windowtitle="UCARD API">
+			<arg line="-encoding UTF-8 -charset UTF-8" />
+			<sourcepath path="${src.dir}" />
+		</javadoc>
+	</target>
+	<target name="zip" depends="all">
+			<java classname="com.ucard.framework.util.ZipCompressorByAnt">
+				<classpath>
+					<path refid="project.class.path" />
+					<pathelement location="${target.dir}" />
+				</classpath>
+			</java>
+		</target>
+	<target name="native2ascii" >
+		   <exec executable="native2ascii.bat">
+		   </exec>
+    </target>
+	<target name="deploy" depends="all">
+			<java classname="com.ucard.framework.util.UcardGradeup">
+				<classpath>
+					<path refid="project.class.path" />
+					<pathelement location="${target.dir}"/>
+				</classpath>
+				<arg value="27.154.61.122:7788/bobing"/>
+				<arg value="192.168.0.100:7788/bobing"/>
+			</java>
+		</target>
+</project>
+

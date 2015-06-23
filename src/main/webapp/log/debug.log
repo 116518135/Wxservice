@@ -1,0 +1,207 @@
+DEBUG 2014-08-13 14:58:55  from Trpreportdtl a where a.trpreportid=6and reportarea=1 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:58:55  from Trpreportdtl a where a.trpreportid=6and reportarea=0 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:58:55  from Trpreportdtl a where a.trpreportid=6and reportarea=2 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:58:55  from Trpreportplugin a where a.trpreportid=6
+DEBUG 2014-08-13 14:58:55 [127.0.0.1]TrpreportManager.view(context):172
+DEBUG 2014-08-13 14:58:56 [127.0.0.1]TrpreportpluginManager.add(context):8
+DEBUG 2014-08-13 14:58:59  from Trpreportdatasource a where a.trpreportid=6
+DEBUG 2014-08-13 14:58:59  from Trpreportplugin a where a.trpreportid=6
+DEBUG 2014-08-13 14:58:59  from Trpreportcondition a where a.trpreportid=6 order by a.rowindex, a.colindex
+DEBUG 2014-08-13 14:58:59  from Trpreportdtl a where a.trpreportid=6and reportarea=1 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:58:59  from Trpreportdtl a where a.trpreportid=6and reportarea=0 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:58:59  from Trpreportdtl a where a.trpreportid=6and reportarea=2 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:58:59  from Trpreportplugin a where a.trpreportid=6
+DEBUG 2014-08-13 14:58:59 [127.0.0.1]TrpreportManager.view(context):160
+DEBUG 2014-08-13 14:59:26 [127.0.0.1]ReportToolManager.list(context):0
+DEBUG 2014-08-13 14:59:27  from Trpplugin  entity where 1=1 
+DEBUG 2014-08-13 14:59:27 [127.0.0.1]TrppluginManager.list(context):150
+DEBUG 2014-08-13 14:59:29  from Trphtmlcate  entity where 1=1 
+DEBUG 2014-08-13 14:59:29 [127.0.0.1]TrphtmlcateManager.list(context):43
+DEBUG 2014-08-13 14:59:32 [127.0.0.1]TrpreportManager.copyFromothertrpreport(context):0
+DEBUG 2014-08-13 14:59:41  from Trpreportdatasource a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:41  from Trpreportplugin a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:41  from Trpreportcondition a where a.trpreportid=6 order by a.rowindex, a.colindex
+DEBUG 2014-08-13 14:59:41  from Trpreportdtl a where a.trpreportid=6and reportarea=1 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:41  from Trpreportdtl a where a.trpreportid=6and reportarea=0 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:41  from Trpreportdtl a where a.trpreportid=6and reportarea=2 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:41  from Trpreportplugin a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:41 [127.0.0.1]TrpreportManager.view(context):272
+DEBUG 2014-08-13 14:59:42 [127.0.0.1]TrpreportdatasourceManager.add(context):38
+DEBUG 2014-08-13 14:59:46  from Trpreportdatasource a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:46  from Trpreportplugin a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:46  from Trpreportcondition a where a.trpreportid=6 order by a.rowindex, a.colindex
+DEBUG 2014-08-13 14:59:46  from Trpreportdtl a where a.trpreportid=6and reportarea=1 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:46  from Trpreportdtl a where a.trpreportid=6and reportarea=0 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:46  from Trpreportdtl a where a.trpreportid=6and reportarea=2 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:46  from Trpreportplugin a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:46 [127.0.0.1]TrpreportManager.view(context):379
+DEBUG 2014-08-13 14:59:47 [127.0.0.1]TrpreportpluginManager.add(context):59
+DEBUG 2014-08-13 14:59:49  from Trpreportdatasource a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:49  from Trpreportplugin a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:49  from Trpreportcondition a where a.trpreportid=6 order by a.rowindex, a.colindex
+DEBUG 2014-08-13 14:59:49  from Trpreportdtl a where a.trpreportid=6and reportarea=1 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:49  from Trpreportdtl a where a.trpreportid=6and reportarea=0 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:49  from Trpreportdtl a where a.trpreportid=6and reportarea=2 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:49  from Trpreportplugin a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:49 [127.0.0.1]TrpreportManager.view(context):208
+DEBUG 2014-08-13 14:59:50  from Trpreportplugin a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:50 [127.0.0.1]TrpreportconditionManager.add(context):102
+DEBUG 2014-08-13 14:59:53  from Trpreportdatasource a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:53  from Trpreportplugin a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:53  from Trpreportcondition a where a.trpreportid=6 order by a.rowindex, a.colindex
+DEBUG 2014-08-13 14:59:53  from Trpreportdtl a where a.trpreportid=6and reportarea=1 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:53  from Trpreportdtl a where a.trpreportid=6and reportarea=0 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:53  from Trpreportdtl a where a.trpreportid=6and reportarea=2 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:53  from Trpreportplugin a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:53 [127.0.0.1]TrpreportManager.view(context):297
+DEBUG 2014-08-13 14:59:56 [127.0.0.1]TrpreportdatasourceManager.add(context):21
+DEBUG 2014-08-13 14:59:58  from Trpreportdatasource a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:58  from Trpreportplugin a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:58  from Trpreportcondition a where a.trpreportid=6 order by a.rowindex, a.colindex
+DEBUG 2014-08-13 14:59:58  from Trpreportdtl a where a.trpreportid=6and reportarea=1 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:58  from Trpreportdtl a where a.trpreportid=6and reportarea=0 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:58  from Trpreportdtl a where a.trpreportid=6and reportarea=2 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 14:59:58  from Trpreportplugin a where a.trpreportid=6
+DEBUG 2014-08-13 14:59:58 [127.0.0.1]TrpreportManager.view(context):148
+DEBUG 2014-08-13 15:02:15  from Trpreport  entity where 1=1  and entity.parentid=33 order by code
+DEBUG 2014-08-13 15:02:15 [127.0.0.1]TrpreportManager.list(context):43
+DEBUG 2014-08-13 15:02:30  from Trpreportdatasource a where a.trpreportid=8
+DEBUG 2014-08-13 15:02:30  from Trpreportplugin a where a.trpreportid=8
+DEBUG 2014-08-13 15:02:30  from Trpreportcondition a where a.trpreportid=8 order by a.rowindex, a.colindex
+DEBUG 2014-08-13 15:02:30  from Trpreportdtl a where a.trpreportid=8and reportarea=1 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 15:02:30  from Trpreportdtl a where a.trpreportid=8and reportarea=0 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 15:02:30  from Trpreportdtl a where a.trpreportid=8and reportarea=2 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 15:02:30  from Trpreportplugin a where a.trpreportid=8
+DEBUG 2014-08-13 15:02:30 [127.0.0.1]TrpreportManager.view(context):204
+DEBUG 2014-08-13 15:02:33 [127.0.0.1]ReportManager.debugcondition(context):187
+DEBUG 2014-08-13 15:04:14 [127.0.0.1]LoginManager.exit(context):1
+DEBUG 2014-08-13 15:04:14 [127.0.0.1]LoginManager.exit(context):0
+DEBUG 2014-08-13 15:04:18 在线用户个数为：0
+DEBUG 2014-08-13 15:04:18 在线用户个数为：1
+DEBUG 2014-08-13 15:04:20 [127.0.0.1]LoginManager.login(context):2561
+DEBUG 2014-08-13 15:04:20 [127.0.0.1]LoginManager.workspace(context):520
+DEBUG 2014-08-13 15:04:38 [127.0.0.1]TrpreportManager.main(context):0
+DEBUG 2014-08-13 15:04:38 [127.0.0.1]TrpreportManager.tree(context):0
+DEBUG 2014-08-13 15:04:38  from Trpreport  entity where 1=1  and entity.parentid=0 order by code
+DEBUG 2014-08-13 15:04:38 [127.0.0.1]TrpreportManager.list(context):129
+DEBUG 2014-08-13 15:04:38 [127.0.0.1]TrpreportManager.json(context):243
+DEBUG 2014-08-13 15:04:39 [{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=13','hrefTarget':'rightFrame','singleClickExpand':true,'id':'13','text':'基础数据'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=27','hrefTarget':'rightFrame','singleClickExpand':true,'id':'27','text':'登录广告管理'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=29','hrefTarget':'rightFrame','singleClickExpand':true,'id':'29','text':'博饼赛场管理'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=33','hrefTarget':'rightFrame','singleClickExpand':true,'id':'33','text':'博饼报表'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=1','hrefTarget':'rightFrame','singleClickExpand':true,'id':'1','text':'系统管理'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=22','hrefTarget':'rightFrame','singleClickExpand':true,'id':'22','text':'报表管理'}]
+DEBUG 2014-08-13 15:04:40  from Trpreport  entity where 1=1  and entity.parentid=33 order by code
+DEBUG 2014-08-13 15:04:40 [127.0.0.1]TrpreportManager.list(context):168
+DEBUG 2014-08-13 15:04:41  from Trpreportdatasource a where a.trpreportid=8
+DEBUG 2014-08-13 15:04:41  from Trpreportplugin a where a.trpreportid=8
+DEBUG 2014-08-13 15:04:41  from Trpreportcondition a where a.trpreportid=8 order by a.rowindex, a.colindex
+DEBUG 2014-08-13 15:04:41  from Trpreportdtl a where a.trpreportid=8and reportarea=1 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 15:04:42  from Trpreportdtl a where a.trpreportid=8and reportarea=0 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 15:04:42  from Trpreportdtl a where a.trpreportid=8and reportarea=2 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 15:04:42  from Trpreportplugin a where a.trpreportid=8
+DEBUG 2014-08-13 15:04:42 [127.0.0.1]TrpreportManager.view(context):443
+DEBUG 2014-08-13 15:04:46 [127.0.0.1]ReportManager.debugcondition(context):155
+DEBUG 2014-08-13 15:05:40 [127.0.0.1]LoginManager.exit(context):4
+DEBUG 2014-08-13 15:05:40 [127.0.0.1]LoginManager.exit(context):0
+DEBUG 2014-08-13 15:05:45 在线用户个数为：0
+DEBUG 2014-08-13 15:05:45 在线用户个数为：1
+DEBUG 2014-08-13 15:05:47 [127.0.0.1]LoginManager.login(context):2649
+DEBUG 2014-08-13 15:05:47 [127.0.0.1]LoginManager.workspace(context):522
+DEBUG 2014-08-13 15:05:54 [127.0.0.1]TrpreportManager.main(context):0
+DEBUG 2014-08-13 15:05:54 [127.0.0.1]TrpreportManager.tree(context):0
+DEBUG 2014-08-13 15:05:54  from Trpreport  entity where 1=1  and entity.parentid=0 order by code
+DEBUG 2014-08-13 15:05:54 [127.0.0.1]TrpreportManager.list(context):433
+DEBUG 2014-08-13 15:05:55 [127.0.0.1]TrpreportManager.json(context):644
+DEBUG 2014-08-13 15:05:55 [{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=13','hrefTarget':'rightFrame','singleClickExpand':true,'id':'13','text':'基础数据'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=27','hrefTarget':'rightFrame','singleClickExpand':true,'id':'27','text':'登录广告管理'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=29','hrefTarget':'rightFrame','singleClickExpand':true,'id':'29','text':'博饼赛场管理'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=33','hrefTarget':'rightFrame','singleClickExpand':true,'id':'33','text':'博饼报表'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=1','hrefTarget':'rightFrame','singleClickExpand':true,'id':'1','text':'系统管理'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=22','hrefTarget':'rightFrame','singleClickExpand':true,'id':'22','text':'报表管理'}]
+DEBUG 2014-08-13 15:05:58  from Trpreport  entity where 1=1  and entity.parentid=33 order by code
+DEBUG 2014-08-13 15:05:58 [127.0.0.1]TrpreportManager.list(context):226
+DEBUG 2014-08-13 15:06:00  from Trpreportdatasource a where a.trpreportid=8
+DEBUG 2014-08-13 15:06:00  from Trpreportplugin a where a.trpreportid=8
+DEBUG 2014-08-13 15:06:00  from Trpreportcondition a where a.trpreportid=8 order by a.rowindex, a.colindex
+DEBUG 2014-08-13 15:06:00  from Trpreportdtl a where a.trpreportid=8and reportarea=1 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 15:06:00  from Trpreportdtl a where a.trpreportid=8and reportarea=0 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 15:06:00  from Trpreportdtl a where a.trpreportid=8and reportarea=2 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 15:06:00  from Trpreportplugin a where a.trpreportid=8
+DEBUG 2014-08-13 15:06:01 [127.0.0.1]TrpreportManager.view(context):722
+DEBUG 2014-08-13 15:06:02 [127.0.0.1]ReportManager.debugcondition(context):180
+DEBUG 2014-08-13 15:07:48 [127.0.0.1]LoginManager.exit(context):4
+DEBUG 2014-08-13 15:07:49 [127.0.0.1]LoginManager.exit(context):0
+DEBUG 2014-08-13 15:07:54 在线用户个数为：0
+DEBUG 2014-08-13 15:07:54 在线用户个数为：1
+DEBUG 2014-08-13 15:07:56 [127.0.0.1]LoginManager.login(context):3083
+DEBUG 2014-08-13 15:07:57 [127.0.0.1]LoginManager.workspace(context):422
+DEBUG 2014-08-13 15:08:01 [127.0.0.1]TrpreportManager.main(context):0
+DEBUG 2014-08-13 15:08:01 [127.0.0.1]TrpreportManager.tree(context):0
+DEBUG 2014-08-13 15:08:01  from Trpreport  entity where 1=1  and entity.parentid=0 order by code
+DEBUG 2014-08-13 15:08:01 [127.0.0.1]TrpreportManager.list(context):282
+DEBUG 2014-08-13 15:08:01 [127.0.0.1]TrpreportManager.json(context):408
+DEBUG 2014-08-13 15:08:01 [{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=13','hrefTarget':'rightFrame','singleClickExpand':true,'id':'13','text':'基础数据'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=27','hrefTarget':'rightFrame','singleClickExpand':true,'id':'27','text':'登录广告管理'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=29','hrefTarget':'rightFrame','singleClickExpand':true,'id':'29','text':'博饼赛场管理'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=33','hrefTarget':'rightFrame','singleClickExpand':true,'id':'33','text':'博饼报表'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=1','hrefTarget':'rightFrame','singleClickExpand':true,'id':'1','text':'系统管理'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=22','hrefTarget':'rightFrame','singleClickExpand':true,'id':'22','text':'报表管理'}]
+DEBUG 2014-08-13 15:08:03 [127.0.0.1]TrpreportManager.json(context):107
+DEBUG 2014-08-13 15:08:03 [{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=34','hrefTarget':'rightFrame','text':'赛场排名查询','id':'34','leaf':true,'iconCls':'icon-cls'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=35','hrefTarget':'rightFrame','text':'赛场用户最好成绩排名查询','id':'35','leaf':true,'iconCls':'icon-cls'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=41','hrefTarget':'rightFrame','text':'决赛资格人数','id':'41','leaf':true,'iconCls':'icon-cls'},{'href':'http://localhost:7788/bobing/trpreport.do?method=list&parentid=42','hrefTarget':'rightFrame','text':'用户活跃度查询','id':'42','leaf':true,'iconCls':'icon-cls'}]
+DEBUG 2014-08-13 15:08:04  from Trpreport  entity where 1=1  and entity.parentid=33 order by code
+DEBUG 2014-08-13 15:08:05 [127.0.0.1]TrpreportManager.list(context):200
+DEBUG 2014-08-13 15:08:05  from Trpreportdatasource a where a.trpreportid=8
+DEBUG 2014-08-13 15:08:06  from Trpreportplugin a where a.trpreportid=8
+DEBUG 2014-08-13 15:08:06  from Trpreportcondition a where a.trpreportid=8 order by a.rowindex, a.colindex
+DEBUG 2014-08-13 15:08:06  from Trpreportdtl a where a.trpreportid=8and reportarea=1 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 15:08:06  from Trpreportdtl a where a.trpreportid=8and reportarea=0 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 15:08:06  from Trpreportdtl a where a.trpreportid=8and reportarea=2 order by a.rowindex,a.colindex
+DEBUG 2014-08-13 15:08:06  from Trpreportplugin a where a.trpreportid=8
+DEBUG 2014-08-13 15:08:07 [127.0.0.1]TrpreportManager.view(context):1016
+DEBUG 2014-08-13 15:08:08 [127.0.0.1]ReportManager.debugcondition(context):292
+DEBUG 2014-08-13 15:08:12 select * from (
+SELECT @ROW := @ROW + 1 AS rank, a.*  
+FROM 
+(select competion.name as competionname,account,result,award,createtime,competion.finaltimes
+from tcomrecord record
+LEFT JOIN tcompetion competion ON competion.tcompetionid = record.tcompetionid
+where record.createtime>=competion.finalgamedate AND record.createtime<DATE_SUB(competion.finalgamedate,INTERVAL -1 DAY) AND record.tcompetionid = 11  
+ORDER BY record.tcompetionid,award,createtime asc
+) a, (SELECT @ROW := 0) r  
+) k  where  rank<=finaltimes
+DEBUG 2014-08-13 15:08:12 [127.0.0.1]ReportManager.debughtml(context):221
+DEBUG 2014-08-13 15:08:51  from Trpreport  entity where 1=1  and entity.parentid=33 order by code
+DEBUG 2014-08-13 15:08:51 [127.0.0.1]TrpreportManager.list(context):223
+DEBUG 2014-08-13 15:08:54  from Trpreport  entity where 1=1  and entity.parentid=33 order by code
+DEBUG 2014-08-13 15:08:55 [127.0.0.1]TrpreportManager.list(context):450
+DEBUG 2014-08-13 15:11:43 [127.0.0.1]TbsuserManager.updatePassword(context):0
+DEBUG 2014-08-13 15:13:00 [127.0.0.1]LoginManager.login(context):96
+DEBUG 2014-08-13 15:13:11 在线用户个数为：1
+DEBUG 2014-08-13 15:13:11 在线用户个数为：2
+DEBUG 2014-08-13 15:13:13 [127.0.0.1]LoginManager.login(context):1270
+DEBUG 2014-08-13 15:13:13 [127.0.0.1]LoginManager.workspace(context):487
+DEBUG 2014-08-13 15:13:18 [127.0.0.1]ReportManager.condition(context):173
+DEBUG 2014-08-13 15:13:33 在线用户个数为：1
+DEBUG 2014-08-13 15:13:33 [127.0.0.1]LoginManager.exit(context):1
+DEBUG 2014-08-13 15:28:12 在线用户个数为：0
+DEBUG 2014-08-13 15:28:12 [127.0.0.1]LoginManager.exit(context):0
+DEBUG 2014-08-13 15:28:12 [127.0.0.1]LoginManager.exit(context):0
+DEBUG 2014-08-13 15:43:46 会话已过期
+DEBUG 2014-08-13 15:47:32 在线用户个数为：0
+DEBUG 2014-08-13 15:47:32 在线用户个数为：1
+DEBUG 2014-08-13 15:47:33 [127.0.0.1]LoginManager.login(context):950
+DEBUG 2014-08-13 15:47:33 [127.0.0.1]LoginManager.workspace(context):548
+DEBUG 2014-08-13 15:53:51  from Tcompetion  entity where 1=1  and ifmainflag=0 
+DEBUG 2014-08-13 15:53:52 [127.0.0.1]TdivisioncompetManager.list(context):378
+DEBUG 2014-08-13 15:53:57  from Taward  entity where entity.tcompetionid=12 order by entity.indexno asc 
+DEBUG 2014-08-13 15:53:58  from Tcompetiondtl  entity where entity.tcompetionid=12
+DEBUG 2014-08-13 15:53:58 [127.0.0.1]TdivisioncompetManager.view(context):692
+DEBUG 2014-08-13 15:53:59 [127.0.0.1]TdivisioncompetManager.imagepic(context):71
+DEBUG 2014-08-13 15:54:20  from Tcompetion  entity where 1=1  and ifmainflag=0 
+DEBUG 2014-08-13 15:54:21 [127.0.0.1]TdivisioncompetManager.list(context):811
+DEBUG 2014-08-13 15:55:31  from Taward  entity where entity.tcompetionid=14 order by entity.indexno asc 
+DEBUG 2014-08-13 15:55:31  from Tcompetiondtl  entity where entity.tcompetionid=14
+DEBUG 2014-08-13 15:55:31 [127.0.0.1]TdivisioncompetManager.view(context):178
+DEBUG 2014-08-13 15:55:32 [127.0.0.1]TdivisioncompetManager.imagepic(context):13
+DEBUG 2014-08-13 15:55:36 [127.0.0.1]TdivisioncompetManager.update(context):53
+DEBUG 2014-08-13 15:55:36 [127.0.0.1]TdivisioncompetManager.imagepic(context):7
+DEBUG 2014-08-13 15:55:37 [127.0.0.1]TdivisioncompetManager.imagepic(context):16
+DEBUG 2014-08-13 15:55:40  from Taward  entity where entity.tcompetionid=14 order by entity.indexno asc 
+DEBUG 2014-08-13 15:55:40  from Tcompetiondtl  entity where entity.tcompetionid=14
+DEBUG 2014-08-13 15:55:40 [127.0.0.1]TdivisioncompetManager.view(context):93
+DEBUG 2014-08-13 15:55:40 [127.0.0.1]TdivisioncompetManager.imagepic(context):83
+DEBUG 2014-08-13 15:55:54 [127.0.0.1]TdivisioncompetManager.update(context):27
+DEBUG 2014-08-13 15:55:54 [127.0.0.1]TdivisioncompetManager.imagepic(context):6
+DEBUG 2014-08-13 15:55:59 [127.0.0.1]TdivisioncompetManager.updateSave(context):138
+DEBUG 2014-08-13 15:55:59  from Taward  entity where entity.tcompetionid=14 order by entity.indexno asc 
+DEBUG 2014-08-13 15:55:59  from Tcompetiondtl  entity where entity.tcompetionid=14
+DEBUG 2014-08-13 15:55:59 [127.0.0.1]TdivisioncompetManager.view(context):105
+DEBUG 2014-08-13 15:56:00 [127.0.0.1]TdivisioncompetManager.imagepic(context):18
+DEBUG 2014-08-13 16:26:47 会话已过期
+DEBUG 2014-08-13 16:26:47 在线用户个数为：0

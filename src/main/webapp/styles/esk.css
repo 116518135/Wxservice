@@ -1,0 +1,134 @@
+.font_label { font-family: "����", "Arial", "sans-serif"; font-size: 12px; font-weight: normal;  }
+.field{ 
+  font-family: "����", "Arial", "sans-serif";
+  BACKGROUND-COLOR: #FFFFFF;
+  BORDER-BOTTOM: #566A64 0px solid;
+  BORDER-LEFT: #566A64 0px solid;
+  BORDER-RIGHT: #566A64 0px solid;
+  BORDER-TOP: #566A64 0px solid;
+  FONT-SIZE: 9pt;
+  border-RightColor: gray;
+  border-BottomColor: gray; 
+  border-style: solid; 
+  border-top-width:1px; 
+  border-right-width: 1px; 
+  border-bottom-width: 1px; 
+  border-left-width: 1px;
+  line-height: 2;
+  }
+  .fieldno{ 
+    border:none;
+    BACKGROUND-COLOR: #FFFFFF;
+  }
+ .field-r{
+  font-family: "����", "Arial", "sans-serif";
+  BACKGROUND-COLOR: #FFFEEC;
+  BORDER-BOTTOM: #566A64 0px solid;
+  BORDER-LEFT: #566A64 0px solid;
+  BORDER-RIGHT: #566A64 0px solid;
+  BORDER-TOP: #566A64 0px solid;
+  FONT-SIZE: 9pt;
+  border-RightColor: gray;
+  border-BottomColor: gray; 
+  border-style: solid; 
+  border-top-width: 1px; 
+  border-right-width: 1px; 
+  border-bottom-width: 1px; 
+  border-left-width: 1px
+ }
+ 
+ .moduleTitle {
+    font-family: "����", "Arial", "sans-serif";
+    background-color: #F4F4F4;
+	border-bottom: 1px solid #308dbb;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	vertical-align: middle;
+	text-align: center;
+}
+.moduleTitleRow {
+	font-family: "����", "Arial", "sans-serif";
+	background-color: #F4F4F4;
+}
+ 
+.selectButton {
+ border:1px solid #3A668B; FONT-SIZE: 9pt; 
+ padding-top:0px; padding-bottom:0px; color:#000000; 
+ WIDTH: 26px; HEIGHT: 24px;
+}  
+a:link{ 
+	font-family: "����", "Arial", "sans-serif";
+	color: blue;
+	text-decoration:none;
+  }
+a:visited{ 
+	font-family: "����", "Arial", "sans-serif";
+	color: blue;
+	text-decoration:none;
+  }
+a:hover{ 
+	font-family: "����", "Arial", "sans-serif";
+	text-decoration:underline;
+	color: blue;
+  }  
+  
+
+
+.label {
+	font-family: "����", "Arial", "sans-serif";
+    BACKGROUND-COLOR:#D2DFF2;
+    BORDER-BOTTOM: grey 1px solid;
+    BORDER-LEFT: grey 0px solid;
+    BORDER-RIGHT: grey 0px solid;
+    BORDER-TOP: grey 0px solid;
+	font-size:9pt;
+    TEXT-ALIGN: right;
+    line-height: 2;
+    
+}
+.input {
+	font-family: "����", "Arial", "sans-serif";
+    BACKGROUND-COLOR:#FFFFFF;
+    BORDER-BOTTOM: grey 1px solid;
+    BORDER-LEFT: grey 0px solid;
+    BORDER-RIGHT: grey 0px solid;
+    BORDER-TOP: grey 0px solid;
+	font-size:10pt;
+    TEXT-ALIGN: left;
+    line-height: 2;
+}
+.label-left {
+	font-family: "����", "Arial", "sans-serif";
+    BACKGROUND-COLOR:#D2DFF2;
+    BORDER-BOTTOM: grey 1px solid;
+    BORDER-LEFT: grey 0px solid;
+    BORDER-RIGHT: grey 0px solid;
+    BORDER-TOP: grey 0px solid;
+	font-size:9pt;
+    TEXT-ALIGN: left
+}
+.icon-prev {
+    background-image: url(../images/prev.gif) !important;
+}
+.icon-next {
+    background-image: url(../images/next.gif) !important;
+}
+.blist {
+    background-image: url(../images/list-items.gif) !important;
+}
+
+.bmenu {
+    background-image: url(../images/menu-show.gif) !important;
+}
+.chgscreen {
+    background-image: url(../images/chgscreen.png) !important;
+}
+.close_self {
+    background-image: url(../images/close1.gif) !important;
+}
+.close_all {
+    background-image: url(../images/close2.png) !important;
+}
+.close_other {
+    background-image: url(../images/close3.png) !important;
+}

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<struts-config> 
+  <data-sources/>  
+  <form-beans> 
+    <form-bean name="LoginForm" type="com.wxservice.web.form.base.LoginForm"/>  
+    <form-bean name="TsysmenuForm" type="com.wxservice.web.form.system.TsysmenuForm"/>  
+    <form-bean name="TsysroleForm" type="com.wxservice.web.form.system.TsysroleForm"/>  
+    <form-bean name="TsysdatadictForm" type="com.wxservice.web.form.system.TsysdatadictForm"/>  
+    <form-bean name="SelectForm" type="com.wxservice.web.form.base.SelectForm"/>  
+    <form-bean name="AboutForm" type="com.wxservice.web.form.system.AboutForm"/>  
+    <form-bean name="TbsuserForm" type="com.wxservice.web.form.base.TbsuserForm"/>  
+    <form-bean name="TreguserForm" type="com.wxservice.web.form.regedit.TreguserForm"/>  
+    <form-bean name="TsyscmpparamForm" type="com.wxservice.web.form.system.TsyscmpparamForm"/>  
+    <form-bean name="TsysexcelForm" type="com.wxservice.web.form.system.TsysexcelForm"/>  
+    <form-bean name="ExcelForm" type="com.wxservice.framework.excel.ExcelForm"/>  
+    <form-bean name="TsysjobForm" type="com.wxservice.web.form.system.TsysjobForm"/>  
+    <form-bean name="TsysjobplanForm" type="com.wxservice.web.form.system.TsysjobplanForm"/>  
+    <form-bean name="TbsmaillogForm" type="com.wxservice.web.form.base.TbsmaillogForm"/>  
+    <form-bean name="TfeedbackForm" type="com.wxservice.web.form.base.TfeedbackForm"/>  
+    <form-bean name="tsyscmpparamForm" type="com.wxservice.web.form.system.TsyscmpparamForm"/>  
+    <form-bean name="ExcelForm" type="com.wxservice.framework.excel.ExcelForm"/>  
+    <form-bean name="TsysexcelForm" type="com.wxservice.web.form.system.TsysexcelForm"/>  
+    <form-bean name="TrppluginForm" type="com.wxservice.web.form.report.TrppluginForm"/>  
+    <form-bean name="TrphtmlcateForm" type="com.wxservice.web.form.report.TrphtmlcateForm"/>  
+    <form-bean name="TrpreportForm" type="com.wxservice.web.form.report.TrpreportForm"/>  
+    <form-bean name="TrpreportdatasourceForm" type="com.wxservice.web.form.report.TrpreportdatasourceForm"/>  
+    <form-bean name="TrpreportpluginForm" type="com.wxservice.web.form.report.TrpreportpluginForm"/>  
+    <form-bean name="TrpreportconditionForm" type="com.wxservice.web.form.report.TrpreportconditionForm"/>  
+    <form-bean name="ReportToolForm" type="com.wxservice.web.form.report.ReportToolForm"/>  
+    <form-bean name="ReportForm" type="com.wxservice.web.form.report.ReportForm"/>  
+    <form-bean name="TsysbillnoruleForm" type="com.wxservice.web.form.system.TsysbillnoruleForm"/>  
+    <form-bean name="ChartForm" type="com.wxservice.web.form.base.ChartForm"/>  
+    <form-bean name="TladadminForm" type="com.wxservice.web.form.loginad.TladadminForm"/>  
+    <form-bean name="TcompetionForm" type="com.wxservice.web.form.competion.TcompetionForm"/>  
+    <form-bean name="TdivisioncompetForm" type="com.wxservice.web.form.competion.TdivisioncompetForm"/>  
+    <form-bean name="TmaincompetForm" type="com.wxservice.web.form.competion.TmaincompetForm"/>  
+    <form-bean name="TtrycompetForm" type="com.wxservice.web.form.competion.TtrycompetForm"/>  
+  </form-beans>  
+  <global-forwards> 
+    <forward name="error" path="/commons/error.jsp"/>  
+    <forward name="systemError" path="/commons/systemError.jsp"/>  
+    <forward name="printError" path="/commons/printError.jsp"/>  
+    <forward name="sessionError" path="/commons/sessionError.jsp"/>  
+    <forward name="accessError" path="/commons/403.jsp"/>  
+    <forward name="delete" path="/commons/deleteSuccess.jsp"/>  
+    <forward name="success" path="/commons/success.jsp"/>  
+    <forward name="success1" path="/commons/success1.jsp"/>  
+    <forward name="failure" path="/commons/failure.jsp"/>  
+    <forward name="index" path="/index.jsp"/> 
+  </global-forwards>  
+  <action-mappings> 
+    <action name="LoginForm" path="/login" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="main" path="/pages/main.jsp"/>  
+      <forward name="index" path="/index.jsp"/>  
+      <forward name="main1" path="/pages/main1.jsp"/>  
+      <forward name="index1" path="/index1.jsp"/>  
+      <forward name="workspace" path="/pages/workspace.jsp"/>  
+      <forward name="download" path="/download.jsp"/> 
+    </action>  
+    <action name="TsysmenuForm" path="/tsysmenu" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/system/tsysmenu_list.jsp"/>  
+      <forward name="view" path="/pages/system/tsysmenu_view.jsp"/>  
+      <forward name="edit" path="/pages/system/tsysmenu_edit.jsp"/>  
+      <forward name="find" path="/pages/system/tsysmenu_find.jsp"/>  
+      <forward name="main" path="/pages/system/tsysmenu_main.jsp"/>  
+      <forward name="adj" path="/pages/system/tsysmenu_adj.jsp"/>  
+      <forward name="tree" path="/pages/system/tsysmenu_tree.jsp"/> 
+    </action>  
+    <action name="TsysroleForm" path="/tsysrole" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/system/tsysrole_list.jsp"/>  
+      <forward name="view" path="/pages/system/tsysrole_view.jsp"/>  
+      <forward name="edit" path="/pages/system/tsysrole_edit.jsp"/>  
+      <forward name="find" path="/pages/system/tsysrole_find.jsp"/>  
+      <forward name="auth" path="/pages/system/tsysrole_auth.jsp"/> 
+    </action> 
+     <action name="TsysjobForm" path="/tsysjob" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/system/tsysjob_list.jsp"/>  
+      <forward name="view" path="/pages/system/tsysjob_view.jsp"/>  
+      <forward name="edit" path="/pages/system/tsysjob_edit.jsp"/>  
+      <forward name="find" path="/pages/system/tsysjob_find.jsp"/> 
+    </action>  
+    <action name="TsysjobplanForm" path="/tsysjobplan" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/system/tsysjobplan_list.jsp"/>  
+      <forward name="view" path="/pages/system/tsysjobplan_view.jsp"/>  
+      <forward name="edit" path="/pages/system/tsysjobplan_edit.jsp"/>  
+      <forward name="find" path="/pages/system/tsysjobplan_find.jsp"/> 
+    </action>   
+    <action name="TsysdatadictForm" path="/tsysdatadict" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/system/tsysdatadict_list.jsp"/>  
+      <forward name="view" path="/pages/system/tsysdatadict_view.jsp"/>  
+      <forward name="edit" path="/pages/system/tsysdatadict_edit.jsp"/>  
+      <forward name="find" path="/pages/system/tsysdatadict_find.jsp"/>  
+      <forward name="viewline" path="/pages/system/tsysdatadict_viewline.jsp"/>  
+      <forward name="editline" path="/pages/system/tsysdatadict_editline.jsp"/> 
+    </action>  
+    <action name="SelectForm" path="/select" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="selectTable" path="/pages/select/selectTable.jsp"/>  
+      <forward name="selectTableMulti" path="/pages/select/selectTableMulti.jsp"/>  
+      <forward name="selectUser" path="/pages/select/selectUser.jsp"/>  
+      <forward name="selectUserMulti" path="/pages/select/selectUserMulti.jsp"/>  
+      <forward name="selectStore" path="/pages/select/selectStore.jsp"/>  
+      <forward name="selectStoreMulti" path="/pages/select/selectStoreMulti.jsp"/>  
+      <forward name="selectTrpreportconditionTable" path="/pages/select/selectTrpreportconditionTable.jsp"/>  
+      <forward name="main" path="/pages/select/select_frame.jsp"/>  
+      <forward name="selectTable1" path="/pages/select/selectTable1.jsp"/> 
+    </action>  
+    <action name="AboutForm" path="/about" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/system/about.jsp"/>  
+      <forward name="select" path="/select.jsp"/> 
+    </action>  
+    <action name="TbsuserForm" path="/tbsuser" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/base/tbsuser_list.jsp"/>  
+      <forward name="view" path="/pages/base/tbsuser_view.jsp"/>  
+      <forward name="edit" path="/pages/base/tbsuser_edit.jsp"/>  
+      <forward name="find" path="/pages/base/tbsuser_find.jsp"/>  
+      <forward name="updatePassword" path="/pages/base/user_password.jsp"/> 
+    </action>  
+    <action name="TreguserForm" path="/treguser" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/regedit/treguser_list.jsp"/>  
+      <forward name="view" path="/pages/regedit/treguser_view.jsp"/>  
+      <forward name="edit" path="/pages/regedit/treguser_edit.jsp"/>  
+      <forward name="find" path="/pages/regedit/treguser_find.jsp"/>  
+      <forward name="findpasswd_success" path="/pages/regedit/findpasswd_success.jsp"/>  
+      <forward name="findpasswd_failure" path="/pages/regedit/findpasswd_failure.jsp"/> 
+    </action>  
+    <action name="TsyscmpparamForm" path="/tsyscmpparam" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="edit" path="/pages/system/tsyscmpparam_edit.jsp"/> 
+    </action>  
+    <action name="TsysbillnoruleForm" path="/tsysbillnorule" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/system/tsysbillnorule_list.jsp"/>  
+      <forward name="view" path="/pages/system/tsysbillnorule_view.jsp"/>  
+      <forward name="edit" path="/pages/system/tsysbillnorule_edit.jsp"/>  
+      <forward name="find" path="/pages/system/tsysbillnorule_find.jsp"/> 
+    </action>  
+    <action name="TsysexcelForm" path="/tsysexcel" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/system/tsysexcel_list.jsp"/>  
+      <forward name="view" path="/pages/system/tsysexcel_view.jsp"/>  
+      <forward name="edit" path="/pages/system/tsysexcel_edit.jsp"/>  
+      <forward name="find" path="/pages/system/tsysexcel_find.jsp"/>  
+      <forward name="viewline" path="/pages/system/tsysexcel_viewline.jsp"/>  
+      <forward name="editline" path="/pages/system/tsysexcel_editline.jsp"/> 
+    </action>  
+    <action name="ExcelForm" path="/excel" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="main" path="/pages/system/excel_main.jsp"/> 
+    </action>  
+    <action name="TbsmaillogForm" path="/tbsmaillog" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="activate_success" path="/pages/base/activate_success.jsp"/>  
+      <forward name="activate_failure" path="/pages/base/activate_failure.jsp"/> 
+    </action>  
+    <action name="TfeedbackForm" path="/tfeedback" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/base/tfeedback_list.jsp"/>  
+      <forward name="view" path="/pages/base/tfeedback_view.jsp"/>  
+      <forward name="edit" path="/pages/base/tfeedback_edit.jsp"/>  
+      <forward name="find" path="/pages/base/tfeedback_find.jsp"/> 
+    </action>  
+    <action name="TsyscmpparamForm" path="/tsyscmpparam" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="edit" path="/pages/system/tsyscmpparam_edit.jsp"/> 
+    </action>  
+    <action name="TsysexcelForm" path="/tsysexcel" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/system/tsysexcel_list.jsp"/>  
+      <forward name="view" path="/pages/system/tsysexcel_view.jsp"/>  
+      <forward name="edit" path="/pages/system/tsysexcel_edit.jsp"/>  
+      <forward name="find" path="/pages/system/tsysexcel_find.jsp"/>  
+      <forward name="viewline" path="/pages/system/tsysexcel_viewline.jsp"/>  
+      <forward name="editline" path="/pages/system/tsysexcel_editline.jsp"/> 
+    </action>  
+    <action name="ExcelForm" path="/excel" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="main" path="/pages/system/excel_main.jsp"/> 
+    </action>  
+    <action name="TrppluginForm" path="/trpplugin" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/report/trpplugin/trpplugin_list.jsp"/>  
+      <forward name="view" path="/pages/report/trpplugin/trpplugin_view.jsp"/>  
+      <forward name="edit" path="/pages/report/trpplugin/trpplugin_edit.jsp"/>  
+      <forward name="find" path="/pages/report/trpplugin/trpplugin_find.jsp"/> 
+    </action>  
+    <action name="TrphtmlcateForm" path="/trphtmlcate" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/report/trphtmlcate/trphtmlcate_list.jsp"/>  
+      <forward name="view" path="/pages/report/trphtmlcate/trphtmlcate_view.jsp"/>  
+      <forward name="edit" path="/pages/report/trphtmlcate/trphtmlcate_edit.jsp"/>  
+      <forward name="find" path="/pages/report/trphtmlcate/trphtmlcate_find.jsp"/>  
+      <forward name="viewline" path="/pages/report/trphtmlcate/trphtmlcate_viewline.jsp"/>  
+      <forward name="editline" path="/pages/report/trphtmlcate/trphtmlcate_editline.jsp"/>  
+      <forward name="test" path="/pages/report/trphtmlcate/trphtmlcate_test.jsp"/> 
+    </action>  
+    <action name="ReportToolForm" path="/reporttool" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/report/reporttool.jsp"/> 
+    </action>  
+    <action name="TrpreportForm" path="/trpreport" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/report/trpreport/trpreport_list.jsp"/>  
+      <forward name="view" path="/pages/report/trpreport/trpreport_view.jsp"/>  
+      <forward name="edit" path="/pages/report/trpreport/trpreport_edit.jsp"/>  
+      <forward name="find" path="/pages/report/trpreport/trpreport_find.jsp"/>  
+      <forward name="viewline" path="/pages/report/trpreport/trpreport_viewline.jsp"/>  
+      <forward name="editline" path="/pages/report/trpreport/trpreport_editline.jsp"/>  
+      <forward name="main" path="/pages/report/trpreport/trpreport_main.jsp"/>  
+      <forward name="tree" path="/pages/report/trpreport/trpreport_tree.jsp"/>  
+      <forward name="improve" path="/pages/report/trpreport/trpreport_improve.jsp"/>  
+      <forward name="copyFromothertrpreport" path="/pages/report/trpreport/trpreport_copyFromothertrpreport.jsp"/>  
+      <forward name="setCollect" path="/pages/report/report_collect.jsp"/>  
+      <forward name="reportmain" path="/pages/report/report_frame.jsp"/> 
+    </action>  
+    <action name="TrpreportdatasourceForm" path="/trpreportdatasource" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="view" path="/pages/report/trpreportdatasource/trpreportdatasource_view.jsp"/>  
+      <forward name="edit" path="/pages/report/trpreportdatasource/trpreportdatasource_edit.jsp"/>  
+      <forward name="list" path="/pages/report/trpreportdatasource/trpreportdatasource_list.jsp"/> 
+    </action>  
+    <action name="TrpreportpluginForm" path="/trpreportplugin" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="view" path="/pages/report/trpreportplugin/trpreportplugin_view.jsp"/>  
+      <forward name="edit" path="/pages/report/trpreportplugin/trpreportplugin_edit.jsp"/>  
+      <forward name="list" path="/pages/report/trpreportplugin/trpreportplugin_list.jsp"/> 
+    </action>  
+    <action name="TrpreportconditionForm" path="/trpreportcondition" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/report/trpreportcondition/trpreportcondition_list.jsp"/>  
+      <forward name="view" path="/pages/report/trpreportcondition/trpreportcondition_view.jsp"/>  
+      <forward name="edit" path="/pages/report/trpreportcondition/trpreportcondition_edit.jsp"/>  
+      <forward name="improve" path="/pages/report/trpreportcondition/trpreportcondition_improve.jsp"/> 
+    </action>  
+    <action name="TsysbillnoruleForm" path="/tsysbillnorule" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="list" path="/pages/system/tsysbillnorule_list.jsp"/>  
+      <forward name="view" path="/pages/system/tsysbillnorule_view.jsp"/>  
+      <forward name="edit" path="/pages/system/tsysbillnorule_edit.jsp"/>  
+      <forward name="find" path="/pages/system/tsysbillnorule_find.jsp"/> 
+    </action>  
+    <action name="ChartForm" path="/chart" scope="request" type="com.wxservice.framework.web.action.StrutsAction"/>  
+    <action name="ReportForm" path="/report" scope="request" type="com.wxservice.framework.web.action.StrutsAction"> 
+      <forward name="condition" path="/pages/report/report_condition.jsp"/>  
+      <forward name="help" path="/pages/report/report_help.jsp"/>  
+      <forward name="html" path="/pages/report/report_result.jsp"/>  
+      <forward name="reporterror" path="/pages/report/report_error.jsp"/>  
+      <forward name="debugcondition" path="/pages/report/report_debugcondition.jsp"/>  
+      <forward name="sqlerror" path="/pages/report/report_sqlerror.jsp"/> 
+    </action>  
+
+
+
+   
+  </action-mappings>  
+  <message-resources parameter="MessageResources"/> 
+</struts-config>

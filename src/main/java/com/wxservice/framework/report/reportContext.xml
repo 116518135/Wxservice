@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans default-autowire="byName" default-lazy-init="true"
+	default-dependency-check="none" default-merge="false">
+	<bean id="commonHtmlProcess" class="com.wxservice.framework.report.html.CommonHtmlProcess" />
+	<bean id="commonManyHtmlProcess" class="com.wxservice.framework.report.html.CommonManyHtmlProcess" />
+	<bean id="collectHtmlProcess" class="com.wxservice.framework.report.html.CollectHtmlProcess" />
+	<bean id="simpleListen" class="com.wxservice.framework.report.listen.SimpleListen" />
+	<bean id="expressionConvert" class="com.wxservice.framework.report.core.convert.ExpressionConvert" />
+	<bean id="fieldConvert" class="com.wxservice.framework.report.core.convert.FieldConvert" />
+	<bean id="labelConvert" class="com.wxservice.framework.report.core.convert.LabelConvert" />
+	<bean id="scriptConvert" class="com.wxservice.framework.report.core.convert.ScriptConvert" />
+	<bean id="variableConvert" class="com.wxservice.framework.report.core.convert.VariableConvert" />
+	<bean id="checkboxConvert" class="com.wxservice.framework.report.core.convert.CheckboxConvert" />
+	<bean id="htmlExport" class="com.wxservice.framework.report.core.HtmlExport" />
+	<bean id="xslExport" class="com.wxservice.framework.report.core.XslExport" />
+	<bean id="conditionProcess" class="com.wxservice.framework.report.core.ConditionProcess" />
+	<bean id="reportManager" class="com.wxservice.framework.report.ReportManager" />
+	<bean id="assembler" class="com.wxservice.framework.report.core.table.Assembler" />
+	<bean id="htmllinkConvert" class="com.wxservice.framework.report.core.convert.HtmllinkConvert" />
+	<bean id="datePlugin" class="com.wxservice.framework.report.plugin.DatePlugin" />
+	<bean id="beginDateHtmlProcess" class="com.wxservice.framework.report.html.BeginDateHtmlProcess"/>
+	<bean id="enddateHtmlProcess" class="com.wxservice.framework.report.html.EnddateHtmlProcess"/>
+	
+
+</beans>

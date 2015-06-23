@@ -1,0 +1,90 @@
+#set($managerName=$propertyUtil.getManagerClassName($table))
+#set($className=$propertyUtil.getPoClassName($table))
+#set($formName=$propertyUtil.getFormClassName($table))
+#set($pk=$table.getPk().getRef())
+package ${managerPackage};
+import ${poPackage}.${className};
+import java.util.List;
+import com.wxservice.framework.web.form.BaseForm;
+import com.wxservice.framework.dao.impl.Operators;
+import com.wxservice.framework.exception.BusinessException;
+import com.wxservice.framework.web.action.ActionContext;
+import com.wxservice.framework.engine.impl.CRUDOperatorImpl;
+import ${formPackage}.$formName;
+/**
+ * 
+ * 描述：   Services
+ * 创建人：Gererator
+ */
+public class $managerName extends CRUDOperatorImpl
+
+{
+	private static final long serialVersionUID = -1L;
+	public $managerName(){
+
+	}
+	public Class getEntityClass() {
+		return ${className}.class;
+	}
+	public String getTableKeyField() {
+		return "$propertyUtil.getPropertyName($pk.code)";
+	}
+	
+
+	public void bindForm(BaseForm baseform, Object object) {
+		if(object==null) return;
+		${className} po= (${className})object;
+		$formName    form=($formName)baseform;
+		form.$propertyUtil.getSetterMethod($pk.code)(po.$propertyUtil.getGetterMethod($pk.code)());
+		#foreach($column in $table.columns)
+		   form.$propertyUtil.getSetterMethod($column.code)(po.$propertyUtil.getGetterMethod($column.code)());
+		#end
+		
+	}
+	
+	public void bindEntity(BaseForm baseform, Object object) {
+	
+		${className} po= (${className})object;
+		$formName    form=($formName)baseform;
+		po.$propertyUtil.getSetterMethod($pk.code)(form.$propertyUtil.getGetterMethod($pk.code)());
+		#foreach($column in $table.columns)
+		   po.$propertyUtil.getSetterMethod($column.code)(form.$propertyUtil.getGetterMethod($column.code)());
+		#end
+		
+	}
+	
+	public boolean isUniques(Object entity) throws Exception{
+		${className} po=(${className})entity;
+		StringBuffer hql=new StringBuffer();
+		hql.append(" from ${className} as a where a.code='");
+		hql.append(po.getCode());
+		hql.append("'");
+		Object o=dao.get(hql.toString());
+		if(o==null){
+			return true;
+		}else{
+			return false;
+		}
+		
+		
+	}
+	
+	public void updateSaveEx(ActionContext context, Object entity,
+			Operators os) {
+		${className} po=(${className})entity;
+		StringBuffer hql=new StringBuffer();
+		hql.append(" from ${className} as a where a.code='");
+		hql.append(po.getCode());
+		hql.append("' and a.$pk.code.toLowerCase()!=");
+		hql.append(po.$propertyUtil.getGetterMethod($pk.code)());
+		List list=dao.iterate(hql.toString());
+		if(list.size()>0){
+			BusinessException exception = new BusinessException("编号重复");
+			throw exception;
+		}
+	}	
+	
+}
+
+
+    

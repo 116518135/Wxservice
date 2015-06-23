@@ -1,0 +1,51 @@
+#set($formName=$propertyUtil.getFormClassName($table))
+#set($springName=$propertyUtil.getSpringManagerName($table))
+#set($pk=$table.getPk().getRef())
+package ${formPackage};
+import com.wxservice.framework.web.form.BaseForm;
+
+/**
+ * 
+ * 描述：   Struts Form
+ * 创建人：Gererator
+ */
+
+public class $formName extends BaseForm
+
+{
+	private static final long serialVersionUID = -1L;
+	public $formName(){
+		this.setService("$springName");
+		this.setModuleTitle("${title}");
+		this.setAnonymous("0");
+	}
+	
+    $propertyUtil.getDataJavaType($pk)  $propertyUtil.getPropertyName($pk.code);
+#foreach($column in $table.columns)
+    $propertyUtil.getDataJavaType($column)  $propertyUtil.getPropertyName($column.code);
+#end
+
+    public $propertyUtil.getDataJavaType($pk) $propertyUtil.getGetterMethod($pk.code) () {
+       return $propertyUtil.getPropertyName($pk.code);
+    }
+    public void $propertyUtil.getSetterMethod($pk.code)($propertyUtil.getDataJavaType($pk) $propertyUtil.getPropertyName($pk.code)) {
+       this.$propertyUtil.getPropertyName($pk.code) = $propertyUtil.getPropertyName($pk.code);
+    }
+#foreach($column in $table.columns)
+   /**
+    * @return 返回 ${column.name}
+    */
+    public $propertyUtil.getDataJavaType($column) $propertyUtil.getGetterMethod($column.code) () {
+       return $propertyUtil.getPropertyName($column.code);
+    }
+	
+   /**
+    * @param $propertyUtil.getPropertyName($column.code) 要设置的 $column.name
+    */
+    public void $propertyUtil.getSetterMethod($column.code)($propertyUtil.getDataJavaType($column) $propertyUtil.getPropertyName($column.code)) {
+      this.$propertyUtil.getPropertyName($column.code) = $propertyUtil.getPropertyName($column.code);
+    }
+#end
+}
+
+

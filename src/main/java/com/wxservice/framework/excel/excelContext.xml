@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans default-autowire="byName" default-lazy-init="true"
+	default-dependency-check="none" default-merge="false">
+	<bean id="importExcel" class="com.wxservice.framework.excel.ImportExcel"/>
+	<bean id="exportExcel" class="com.wxservice.framework.excel.ExportExcel"/>
+	<bean id="springExcelProcess" class="com.wxservice.framework.excel.core.SpringExcelProcess"/>
+	<bean id="sqlExcelProcess" class="com.wxservice.framework.excel.core.SqlExcelProcess"/>
+	<bean id="cellExcelField" class="com.wxservice.framework.excel.base.CellExcelField"/>
+    <bean id="varExcelField" class="com.wxservice.framework.excel.base.VarExcelField"/>
+    <bean id="finalExcelField" class="com.wxservice.framework.excel.base.FinalExcelField"/>
+    <bean id="userExcelProcess" class="com.wxservice.framework.excel.core.UserExcelProcess"/>
+
+</beans>

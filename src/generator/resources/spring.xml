@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<bean id="Config" class="com.wxservice.framework.generator.config.Config">
+	<!-- 
+	 action命令包含:
+	 java文件方面：po,form,manager
+	 JSP文件方面：list,edit,view,find,editline,viewline
+	 配置xml文件方面：strutsxml,managerxml,poxml
+	 po,form,manager,list,edit,view,find,strutsxml,managerxml,poxml
+	-->
+	
+    	<property name="action"><value>po,form,manager,list,edit,view,find,strutsxml,managerxml,poxml</value></property>
+	    <property name="overwrite"><value>true</value></property>
+    	<property name="table"><value>tshoplogistics</value></property>
+    	<!-- 
+    	    编辑字段配置格式为：columnname1;[onblur1];[true]
+    	                    |columnname2;[onblur2];[false]
+    	                    |columnname2;[onblur2];[false]
+    	   常用的回车事件如下：
+   	   	  //最大长度的限制:validateLength
+	      //编码的输入方式  isCode()
+	      //检查eamil :isEmail
+	      //电话:      isTel
+	      //是否为正数 isInt()
+          //是否为整数 isNum()
+          //是否为实数 isReal()
+          //检查日期   checkDate(s_date,true)  第二个参数为true表示日期可以为空，为否表示不可以为空
+          //ValidNum_ext(min,max)                 
+    	 -->
+    	<property name="columns">
+    	   <value> 
+    	    code;isCode();true|name;;true
+    	   </value>
+    	</property>
+    	<property name="dtltable"><value></value></property>
+    	<property name="dtlcolumns">
+    	   <value> 
+    	
+    	   </value>
+    	</property>    	
+   		<property name="module"><value>shop.base</value></property>
+   		<property name="title"><value></value></property>
+		<property name="pdmFile"><value>wxservice.pdm</value></property>
+		<property name="template"><value>template1</value></property>	
+	</bean>
+    <bean id="PdmAccessor"     class="com.wxservice.framework.generator.pdm.PdmAccessor">
+       <property name="config"><ref local="Config"/></property>
+    </bean>
+    <bean id="codeGenerator"     class="com.wxservice.framework.generator.main.CodeGenerator">
+		<property name="pdm"><ref local="PdmAccessor"/></property>
+		<property name="config"><ref local="Config"/></property>
+	</bean>
+</beans>
