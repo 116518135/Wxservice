@@ -11,7 +11,7 @@ import com.wxservice.framework.util.WebUtil;
 import com.wxservice.rop.request.LoginRequest;
 import com.wxservice.rop.response.LoginResponse;
 
-@ServiceMethodBean(version = "1.0")
+@ServiceMethodBean(version = "1.0") 
 public class UserService {
 	@ServiceMethod(method = "user.login", version = "1.0", needInSession = NeedInSessionType.NO,ignoreSign = IgnoreSignType.YES)
 	public Object login(LoginRequest request) {
