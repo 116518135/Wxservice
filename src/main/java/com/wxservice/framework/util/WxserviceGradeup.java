@@ -57,7 +57,7 @@ public class WxserviceGradeup {
 	}
 
 	private static void gradeAll(String[] args) throws InterruptedException {
-		String filename = "/Users/Mike/Documents/wxservice.rar";
+		String filename = "c://wxservice.rar";
 		ZipCompressorByAnt.zip(filename);
 		for (Object o : args) {
 			String line = (String) o;
