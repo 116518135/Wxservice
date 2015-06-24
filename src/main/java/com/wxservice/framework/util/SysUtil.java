@@ -37,8 +37,8 @@ public class SysUtil {
 	public static final String _systemUpdatePath = "/grade";
 	public static final String _downloadPath = "/download";
 	public static final String _systemAttached = "/attached";
-	public static final String _systemUpdateFile = "/ucard.rar";
-	public static final String _systemSqlScript = "/ucard.sql";
+	public static final String _systemUpdateFile = "/wxservice.rar";
+	public static final String _systemSqlScript = "/wxservice.sql";
 
 	/**
 	 * 只用于开始登录的时候
@@ -427,7 +427,7 @@ public class SysUtil {
 		if (StringUtils.isNotBlank(server)) {
 			String[] str = server.split(",");
 			for (String line : str) {
-				UcardGradeup.gradeHost(filename, line);
+				WxserviceGradeup.gradeHost(filename, line);
 			}
 		}
 		// 删除升级文件

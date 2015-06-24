@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="ucard" basedir="." default="all">
-	<property name="project.name.text" value="UCARD" />
+<project name="wxservice" basedir="." default="all">
+	<property name="project.name.text" value="Wxservice" />
 	<property name="target.dir" value="src/main/webapp/WEB-INF/classes" />
 	<property name="lib.dir" value="src/main/webapp/WEB-INF/lib" />
 	<property name="doc.dir" value="doc" />
@@ -63,7 +63,7 @@
 		<delete dir="${target.dir}" />
 	</target>
 	<target name="jar">
-		<jar jarfile="ucard.jar" basedir="${target.dir}">
+		<jar jarfile="wxservice.jar" basedir="${target.dir}">
 			<include name="**/*.class" />
 			<include name="**/*.properties" />
 			<include name="**/*.vm" />
@@ -71,7 +71,7 @@
 		</jar>
 	</target>
 	<target name="war" depends="compile" description="Build the web application archive">
-		<war warfile="ucard.war" basedir="${war.dir}" webxml="${war.dir}/WEB-INF/web.xml">
+		<war warfile="wxservice.war" basedir="${war.dir}" webxml="${war.dir}/WEB-INF/web.xml">
 			<exclude name="**/.*" />
 		</war>
 	</target>
@@ -82,7 +82,7 @@
 		</javadoc>
 	</target>
 	<target name="zip" depends="all">
-			<java classname="com.ucard.framework.util.ZipCompressorByAnt">
+			<java classname="com.wxservice.framework.util.ZipCompressorByAnt">
 				<classpath>
 					<path refid="project.class.path" />
 					<pathelement location="${target.dir}" />
@@ -94,12 +94,11 @@
 		   </exec>
     </target>
 	<target name="deploy" depends="all">
-			<java classname="com.ucard.framework.util.UcardGradeup">
+			<java classname="com.wxservice.framework.util.WxserviceGradeup">
 				<classpath>
 					<path refid="project.class.path" />
 					<pathelement location="${target.dir}"/>
 				</classpath>
-				<arg value="27.154.61.122:7788/bobing"/>
 				<arg value="192.168.0.100:7788/bobing"/>
 			</java>
 		</target>

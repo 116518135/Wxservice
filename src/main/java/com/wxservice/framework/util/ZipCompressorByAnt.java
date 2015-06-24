@@ -54,11 +54,11 @@ public class ZipCompressorByAnt {
 
 	public static void main(String[] args) {
 		System.out.println(System.getProperty("user.dir"));
-		String filename="c:"+SysUtil._systemUpdateFile;
-		zipUcard(filename);
+		String filename="/Users/Mike/Documents"+SysUtil._systemUpdateFile;
+		zip(filename);
 	}
 
-	public static void zipUcard(String filename) {
+	public static void zip(String filename) {
 		System.out.println("正在生成升级文件：");
 		ZipCompressorByAnt zca = new ZipCompressorByAnt(filename);
 		List excludes=new ArrayList();
@@ -92,8 +92,8 @@ public class ZipCompressorByAnt {
 		excludes.add("**/WEB-INF/classes/log4j.properties");
 		excludes.add("**/WEB-INF/*.bak");
 		List includes=new ArrayList();
-		String path=System.getProperty("user.dir")+"\\src\\main\\webapp";
-		String libpath=System.getProperty("user.dir")+"\\src\\main\\webapp\\WEB-INF\\lib";
+		String path=System.getProperty("user.dir")+"/src/main/webapp";
+		String libpath=System.getProperty("user.dir")+"/src/main/webapp/WEB-INF/lib";
 		File root = new File(libpath);
 	    File[] files = root.listFiles();
 	    for(int i=0;i<files.length;i++){

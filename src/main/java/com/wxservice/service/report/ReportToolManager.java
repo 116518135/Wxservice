@@ -23,7 +23,7 @@ import com.wxservice.framework.report.util.ReportUtil;
 import com.wxservice.framework.util.FileUtil;
 import com.wxservice.framework.util.MapUtil;
 import com.wxservice.framework.util.SystemLogger;
-import com.wxservice.framework.util.UcardGradeup;
+import com.wxservice.framework.util.WxserviceGradeup;
 import com.wxservice.framework.web.action.ActionContext;
 import com.wxservice.framework.web.action.IStrutsForward;
 import com.wxservice.web.form.report.ReportToolForm;
@@ -232,7 +232,7 @@ public class ReportToolManager extends BaseEngine {
 				if (StringUtils.isNotBlank(form.getDeployServer())) {
 					String[] str = form.getDeployServer().split(",");
 					for (String line : str) {
-						UcardGradeup.reportDeploy(file, line);
+						WxserviceGradeup.reportDeploy(file, line);
 					}
 				}
 			}

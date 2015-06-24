@@ -6,7 +6,7 @@ import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.methods.MultipartPostMethod;
 
 
-public class UcardGradeup {
+public class WxserviceGradeup {
 	public final static int BUFFER_SIZE = 8096;
 
 
@@ -57,8 +57,8 @@ public class UcardGradeup {
 	}
 
 	private static void gradeAll(String[] args) throws InterruptedException {
-		String filename = "c://register.rar";
-		ZipCompressorByAnt.zipUcard(filename);
+		String filename = "/Users/Mike/Documents/wxservice.rar";
+		ZipCompressorByAnt.zip(filename);
 		for (Object o : args) {
 			String line = (String) o;
 			gradeHost(filename, line);
